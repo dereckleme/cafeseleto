@@ -1,0 +1,336 @@
+<?php echo $this->doctype(); ?>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('SELETO ALIMENTOS | ' . $this->title) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')
+        							->appendName('keywords', $this->keywords)
+        							->appendName('description', $this->descriptions)
+        							->appendName('robots', 'index,follow') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/ico', 'href' => $this->basePath() . '/img/favicon.ico'))                        
+                        ->prependStylesheet($this->basePath() . '/css/style.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))                                      
+        							  ->prependFile($this->basePath() . '/js/site.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.min.js') ?>
+
+    </head>
+    <body>
+        <div id="geral">
+			<div id="header">
+				<div id="menu">
+					<ul class="mn_esq">
+						<li><a href="#" title="Compre Aqui" class="compreAqui" target="_blank">COMPRE AQUI</a></li>
+						<li><a href="<?php echo $this->url('seletoDom') ?>" title="Conheça Seleto Dom">CONHEÇA SELETO DOM</a></li>
+					</ul>
+					<h1><a href="<?php echo $this->url('home'); ?>" class="logoSeleto">Café Seleto - Grãos especiais. Sabor delicioso.</a></h1>
+					<ul class="mn_dir">
+						<li><a href="<?php echo $this->url('seletoEmpresa') ?>" title="Nossa Empresa">NOSSA EMPRESA</a></li>
+						<li><a href="<?php echo $this->url('seletoContato') ?>" title="Fale Conosco">FALE CONOSCO</a></li>
+					</ul>
+				</div>
+			</div>
+	
+			<div id="content">
+                
+               
+
+
+				<div id="contentTopo">
+
+					<ul class="status_produtos">
+						<li class="status_produtos"><a href="" class="btn_produtos" title="Nossos Produtos">NOSSOS PRODUTOS</a></li>
+					</ul>
+
+                  
+					<ul class="status_redesSociais">
+					
+						
+					
+						<li><a href="" class="facebook" title="facebook">Facebook</a></li>
+						<li><a href="" class="twitter" title="twitter">Twitter</a></li>
+						<li><a href="" class="instagran" title="instagran">Instagran</a></li>
+						<li><a href="" class="nossaMusica" title="Música Seleto">Música</a></li>
+					</ul>
+
+                     <ul class="download_musica" style="display:none">
+                        <li class="player">
+							<audio id="musica"><source src="<?php echo $this->basepath('musica/musica.mp3') ?>" type="audio/mp3" /></audio>
+							<a href="#" class="playMusica">Play</a>
+							<a href="#" class="stopMusica">Stop</a>
+							
+							
+						</li>
+
+                        <li class="download">
+						
+                            <div id="downloadSeleto">
+                               <a href="#" class="baixeMusica">Baixe a música</a><br/>
+							   <div style="display:none" class="monstrarDownloads">
+                               <a href="#" class="musica">DIA  DAS  MÃES</a><br/>
+                               <a href="#" class="musica">SELETO  ORIGINAL</a><br/>
+                               <a href="#" class="musica">SELETO  CLÁSSICO</a>
+								</div>
+                            </div>
+                           
+                        </li>
+                                                  
+                    </ul>
+
+            <div style="display:none" id="produtos">
+                <div id="header_produtos">
+                    <p class="titulo_produtos">conheça nossos produtos<p>  
+                </div>
+
+                <div id="slider_produtos_geral">
+                    
+                    <div id="menu_slider">
+                    <a class="txt_cafe" href="#">nossos cafés</a>
+                    <a class="txt_alimentos" href="#">nossos alimentos</a>
+
+                            <div id="menu_slider_overflow">
+                                <div id="overflow">
+                                    <div id="risca" >
+                                       <img class="detalhe_slider" src="img/detalhe_slider.png" style="left:140px;">
+                                    </div>
+                                </div>   
+                            </div>
+
+                    </div>
+
+
+                    <div id="seta_esquerda">
+                        <a href="#" class="nextEsquerda"><img class="seta_slider" src="img/seta_esquerda.png"></a>     
+                    </div>
+                    <div id="seta_direita">
+                        <a href="#" class="nextDireita"><img class="seta_slider" src="img/seta_direita.png"> </a>    
+                    </div>
+
+                        <nav id="slide">
+                            <ul class="nossos_cafes" style="left:-960px">
+                                  
+                                <li  class="cafe">
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src=""></a></br>
+                                       
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src="img/cafes/almofada-tradicional-500.png"></a></br>Almofada Tradicional<br/>250<span class="caixaBaixa" style="text-transform:none;">g</span> e 500<span class="caixaBaixa" style="text-transform:none;">g</span> 
+                                        
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src="img/cafes/almofada-forte-250.png"></a></br>Almofada<br/> Forte<br/>250<span class="caixaBaixa" style="text-transform:none;">g</span> e 500<span class="caixaBaixa" style="text-transform:none;">g</span> 
+
+                                         
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src=""></a></br>
+                                        
+                                    </div>
+
+                                </li>
+
+                                <li  class="cafe" >
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src=""></a></br>
+                                         <!--Vacuo 250<span class="caixaBaixa" style="text-transform:none;">g</span> <strong>tradicional</strong> -->
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src="img/cafes/pack-vacuo-500-tradicional.png"></a></br>Pack Vácuo Tradicional<br/>250<span class="caixaBaixa" style="text-transform:none;">g</span> e 500<span class="caixaBaixa" style="text-transform:none;">g</span> 
+                                    </div>
+                                    <div id="itens" style="text-align:center;">
+                                        <a href=""><img class="img_itens" src="img/cafes/pack-vacuo-500-forte.png"></a></br>
+                                       Pack Vácuo <br/>forte <br/> 250<span class="caixaBaixa" style="text-transform:none;">g</span> e 500<span class="caixaBaixa" style="text-transform:none;">g</span>   
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src=""></a></br>
+                                        <!--Vacuo 500<span class="caixaBaixa" style="text-transform:none;">g</span> <br/> <strong>forte</strong>-->
+                                    </div>
+
+                                </li>
+
+                               <li  class="cafe">
+
+                                    <div id="itens_don">
+                                        <a href=""><img class="img_itens" src="img/cafes/dom-levissimo.png"></a></br>
+                                        Levíssimo
+                                    </div>
+                                  <!--  <div id="itens_don">
+                                        <a href=""><img class="img_itens" src="img/cafes/dom-descafeinado.png"></a></br>
+                                        Descafeinado
+                                    </div>-->
+                                    <div id="itens_don">
+                                        <a href=""><img class="img_itens" src="img/cafes/dom-intenso.png"></a></br>
+                                        Intenso
+                                    </div>
+                                    
+
+                                </li>
+
+                                <!-- <li class="cafe">
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src="img/cafeforte_250.png"></a></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src="img/cafeforte_250.png"></a></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src="img/cafeforte_250.png"></a></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src="img/cafeforte_250.png"></a></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+
+                                </li>-->
+
+                                <li class="cafe">
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src=""></a></br>
+                                        <!--Pack Vacuo 250 forte-->
+                                    </div>
+                                
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src="img/cafes/graos-500.png"></a></br>
+                                      
+                                    </div>
+                                    <div id="itens">
+                                        <a href=""><img class="img_itens" src=""></a></br>
+                                         <!--Pack Vacuo 250 forte-->
+                                    </div>
+
+                                </li>
+
+                            </ul> 
+
+
+
+                            <ul class="nossos_alimentos" style="display:none;left:-960px">
+                                <li class="alimentos">
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 fortevvv
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+									<div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                  </li>
+								  <li class="arroz">
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                         Pack Vacuo 250 forteaaa
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+									<div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                  </li>
+								  <li class="arroz">
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                       Pack Vacuo 250 fortexxx
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 fortexxx
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+									<div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                  </li>
+								  <li class="arroz">
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                         Pack Vacuo 250 fortexxx
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+									<div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                  </li>
+								  <li class="arroz">
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                    <div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+									<div id="itens">
+                                        <img class="img_itens" src="img/cafeforte_250.png"></br>
+                                        Pack Vacuo 250 forte
+                                    </div>
+                                  </li>
+                            </ul> 
+
+                        </nav>
+
+
+
+                </div>
+
+                
+            </div>
+
+
+
+</div>
+				<!-- conteudo -->
+				<?php echo $this->content; ?>
+			</div>
+	
+			<div id="footer">
+				<div id="menu_footer">
+					<ul class="mn_footer">
+						<li>CAFÉ SELETO COPYRIGHT &copy 2013</li>
+						<li>TODOS OS DIREITOS RESERVADOS</li>
+						<li><a href="<?php echo $this->url('seletoPolitica') ?>">POLÍTICA DE PRIVACIDADE</a></li>
+						<li><a href="http://www.spicyweb.com.br" target="_blank"><img src="<?php echo $this->basepath('img/logo_spicy.png') ?>" alt="Spicy Web" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

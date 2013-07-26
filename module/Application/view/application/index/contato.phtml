@@ -1,0 +1,42 @@
+<?php
+$this->layout()->setVariables(array('title'=>'CONTATO', 'keywords'=>'palavra-chave', 'descriptions'=>'descricao site'));
+?>
+<div id="contato">
+	<div id="conteudo_contato">
+		<div id="fale_conosco">
+			<h2>FALE CONOSCO</h2>
+			<p class="txt_contato">Rua Achilles Curtolo, 467 - barra funda - sp - cep: 01144-010</p>
+			<div id="mapa">
+				<iframe width="460" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?q=Rua+Achilles+Curtolo,+467+-+barra+funda+-+sp+-+cep:+01144-010&amp;hl=pt-BR&amp;ie=UTF8&amp;hq=Rua+Achilles+Curtolo,+467+-&amp;hnear=01144-010&amp;t=m&amp;ll=-23.523208,-46.672711&amp;spn=0.006886,0.009871&amp;z=16&amp;output=embed"></iframe>
+				<br /> 
+				<small><a href="https://maps.google.com.br/maps?q=Rua+Achilles+Curtolo,+467+-+barra+funda+-+sp+-+cep:+01144-010&amp;hl=pt-BR&amp;ie=UTF8&amp;hq=Rua+Achilles+Curtolo,+467+-&amp;hnear=01144-010&amp;t=m&amp;ll=-23.523208,-46.672711&amp;spn=0.006886,0.009871&amp;z=16&amp;source=embed" style="color: #FFF; text-align: left" target="_blank">Exibir mapa ampliado</a></small>
+			</div>
+			<?php 
+			//print_r($this->form->getMessages());
+			?>
+			<div id="form">
+				<?php 
+				$form = $this->form;
+				$form->setAttribute('action', $this->url('seletoContato'));
+				$form->prepare();
+				echo $this->form()->openTag($form);
+					
+					echo $this->formRow($form->get('nome'));
+					echo "<br class='clear'>";
+					echo $this->formRow($form->get('email'));
+					echo "<br class='clear'>";
+					echo $this->formRow($form->get('phone'));					
+					echo $this->formRow($form->get('destinatario'));
+					echo "<br class='clear'>";
+					echo $this->formRow($form->get('mensagem'));
+					echo "<br class='clear'>";
+					echo "<input id='btnLimpar' type='reset' class='limpar' value='LIMPAR'>";
+					echo $this->formSubmit($form->get('submit'));
+				
+				echo $this->form()->closeTag();
+				?>
+				<br style="clear: both;" />			
+			</div>			
+		</div>
+	</div>
+</div>

@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+body { margin: 0px; padding: 0px; font-family:"Myriad Pro"; font-size: 0.750em; font-weight: 200; background: #1c0c00;}
+h1, h2, h3, h4, h5, h6, p, span  { font-weight: 200}
+h1, h2, h3, h4, h5, h6 {letter-spacing: 3px}
+h1{text-indent: -9999px; float: left; text-align: center}
+h1 a.logoSeleto {background: url(../img/logo_seleto.png) no-repeat ; width:280px; height:163px;  display: block; position: absolute; margin-top: -10px; margin-left: 30px}
+h2{ text-align: center; color: #311601; font-weight: 200; padding: 0px; margin: 0px; font-size: 40px; letter-spacing: 3px; }
+h3{ text-align: center; color: #FFF; font-size: 90%; }
+h4{ background: url(../img/linha_torrefacao.png)no-repeat bottom;font-size:2.188em; color: #1c0c00; padding-bottom: 20px}
+h5{ font-size: 24px; text-align: center; color:#fff;}
+h6{text-transform: uppercase; font-size: 5.625em; text-align: center; letter-spacing: 30px; padding: 0 0 50px 0; margin: 0 0 50px 0; background: url(../img/linha_dom.png)repeat-x bottom;}
+a{ text-decoration: none}
+ul, li { padding: 0px; margin: 0px; list-style: none; }
+img.fundo_gradiente {width: 100%}
+img.fundo_gradiente { min-width: 1024px;}
+#geral { }
+
+/******************************HEADER******************************/
+#header {float: left; width: 100%; background:#1c0c00;}
+#header { min-width: 1024px;}
+#menu{  width: 960px; margin: 0 auto; }
+ul.mn_esq{float: left}
+ul.mn_dir{float: right;}
+ul.mn_esq li, ul.mn_dir li {display: inline-table; padding: 30px 30px; }
+ul.mn_esq li a, ul.mn_dir li a {color:#fff;}
+ul.mn_esq li a:hover, ul.mn_dir li a:hover {color:#a16e3f;}
+li a.compreAqui {background: url(../img/icon_cestaCompras.png) no-repeat left center; padding-left: 60px; padding-top: 13px; padding-bottom: 13px}
+
+/**********************************CONTENT******************************/
+#content { width: 100%; float: left; background:url(../img/fundo_g.png) no-repeat top center; background-size: 100%;  }
+#content { min-width: 1024px;}
+
+/*******************************CONTENT--TOPO******************************/
+#contentTopo { width: 100%; float: left; }
+#contentTopo { min-width: 1024px;}
+ul.status_produtos {float: left;}
+ul.status_redesSociais {float:right;}
+ul.download_musica {float:right;}
+ul.status_produtos li {margin-top: 179px}
+li a.btn_produtos { background: url(../img/seta.png) no-repeat right #1c0c00; padding:15px 50px 15px 20px;color:#fff; }
+ul.status_redesSociais li a{margin-right: 10px; margin-top: 10px}
+li a.facebook { background: url(../img/facebook.png) no-repeat ; width:42px ; height: 42px; float: left; text-indent:-9999px}
+li a.twitter{ background: url(../img/twitter.png) no-repeat; width:42px ; height: 42px; float: left; text-indent:-9999px}
+li a.instagran { background: url(../img/instagran.png) no-repeat; width:42px ; height: 42px; float: left; text-indent:-9999px}
+li a.nossaMusica { background: url(../img/musica_seleto.png) no-repeat;  width:42px ; height: 42px; float: left; text-indent:-9999px}
+li a.facebook:hover{background-image: url(../img/facebook_hover.png);}
+li a.twitter:hover{background-image: url(../img/twitter_hover.png);}
+li a.instagran:hover{background-image: url(../img/instagran_hover.png);}	
+ul.download_musica {}	
+ul.download_musica li {margin-top: 166px; }
+ul.download_musica li.player {text-transform: uppercase; background: #1c0c00;  float: left; width: 135px; height: 42px }
+a.playMusica{background: url(../img/play_pause.png)no-repeat; width: 70px; height: 70px; margin-top: -15px; float: left; text-indent: -9999px;}
+a.stopMusica{background: url(../img/stop.png)no-repeat; width: 70px; height: 70px;  float: left; margin-left: -5px; text-indent: -9999px;}
+li.download{ background: #1c0c00; float: left; text-align: center; }
+a.baixeMusica { color:#a16e3f;padding-left:30px; padding-right: 15px; text-transform: uppercase; float: left; letter-spacing: 2px; padding-top: 13px; padding-bottom: 15px}
+#downloadSeleto { display: block; }
+#downloadSeleto a.musica { color:#a16e3f; text-transform: uppercase;float: left; letter-spacing: 2px; padding-top: 15px; padding-bottom: 15px; width: 157px}
+#downloadSeleto a:hover.musica {background:#a16e3f; color:#FFF; }
+
+
+
+
+/*************************************PRODUTOS******************************/
+#produtos{ width: 100%; float: left; background: #FFF; border-bottom: 7px solid #1c0c00; margin-bottom: 40px; }
+#produtos{ min-width: 1024px;}
+#header_produtos { width: 100%; height: 45px; float: left; background: #1c0c00; }
+#header_produtos { min-width: 1024px;}
+p.titulo_produtos { text-align: center; text-transform: uppercase; color: #FFF; font-size: 15px; letter-spacing: 5px;}
+#slider_produtos_geral{ width: 1024px; margin: 0 auto; }
+#menu_slider { width: 600px; height: 150px; margin: 0 auto; }
+#menu_slider_overflow { width: 600px; float: left; height:40px; overflow: hidden; }
+#overflow { position: relative; width:1200px; left:0px; height:40px; }
+#risca { width: 600px; float: left; height: 1px; background: #6d3816; margin-top: 20px; }
+img.detalhe_slider { position: relative; left: 30px; top: -2px;}
+a.txt_cafe { width: 300px; margin-top: 30px;  float: left; text-align: center; font-size: 15px; text-transform: uppercase; letter-spacing: 4px; color: #6d3816; }
+a.txt_alimentos { width: 300px; margin-top: 30px; float: left; text-align: center; font-size: 15px; text-transform: uppercase; letter-spacing: 4px; color: #a16e3f; }
+nav#slide { width:960px; height:370px; float: left; overflow: hidden; }
+#seta_esquerda { width: 24px; height: 370px; float: left; }
+#seta_direita { width: 24px; height: 370px; float: right; margin-right: 16px;}
+img.seta_slider { margin-top: 160px;}
+ul.nossos_cafes { position: relative; width:4800px; left:0px;}
+li.cafe { width: 960px; height: 370px; float: left; }
+li #itens { width: 240px; height: 370px; float: left;  text-align: center; text-transform: uppercase; color: #1c0c00; font-size: 16px; letter-spacing: 5px;}
+li #itens_don { width: 320px; height: 370px; float: left;  text-align: center; text-transform: uppercase; color: #1c0c00; font-size: 16px; letter-spacing: 5px;}
+li img.img_itens { margin-top: 35px;}
+ul.nossos_alimentos{ position: relative; width:4800px; left:0px;}
+li.alimentos { width: 960px; height: 370px; float: left; }
+
+/*******************************CONTENT--SLIDE******************************/
+#Home_Slide { width: 100%; float: left; }
+#Home_Slide { min-width: 1024px;}
+#Slide_geral { width: 1024px; margin: 0 auto; }
+#Nav_slide_geral { width: 1024px; margin: 0 auto; overflow: hidden;}
+ul.slide_ul { position: relative; width:8192px; left:0px; }
+li.slide_li { float: left;}
+span#col_esquerda { width: 70px; height: 70px; z-index: 1; position: absolute; background: url(../img/btn_esq.png) no-repeat; margin-top: 210px;}
+span#col_esquerda:hover { background: url(../img/btn_esq_hover.png) no-repeat ;}
+img.btn_esq { margin-top: 210px;}
+span#col_direita { width: 70px; height: 70px; z-index: 1; position: absolute; background: url(../img/btn_dir.png) no-repeat; margin-left: 955px; margin-top: 210px;} 
+span#col_direita:hover { background: url(../img/btn_dir_hover.png) no-repeat ;}
+img.btn_dir { margin-top: 210px;}
+
+/******************************CONTENT--TORREFAÇÃO**************************/
+#contentTorrefacao{ width: 100%; float: left;  background: url(../img/fundo_torrefacao.png);}
+#contentTorrefacao { min-width: 1024px;}
+#sombra { width: 1024px; margin: 0 auto;}
+#box_torrefacao {width: 960px; margin: 0 auto; height: 579px; background: url(../img/box_torrefacao.png) no-repeat top center; margin-top: 50px; margin-bottom: 50px}
+.torrefacao {width: 370px; text-align: center; margin-left: 495px; margin-top: 50px; float: left}
+p.subtitulo_torrefacao {font-size: 1.125em; color:#1c0c00; text-transform: uppercase; font-weight: bold; letter-spacing: 1px}
+p.text_torrefacao {color:#1c0c00; line-height: 20px; font-size:1.125em; }
+
+/*******************************NOSSA EMPRESA******************************/
+#NossaEmpresa { width: 100%; float: left; }   
+#NossaEmpresa { min-width: 1024px;}
+#Historia { width: 960px; margin: 0 auto;  }   
+p.txt_Empresa { width: 660px; text-align: center; margin: 0 auto; color: #311601; margin-top:30px; font-size: 1.2em;  }
+#Imagens_Historia { width: 960px; height: 302px; float: left; margin-bottom: 25px; margin-top: 25px;}
+#missao { width: 302px; height: 300px; float: left; position: relative; z-index: 2; left: 90px;}
+#cafe { float: left; position: relative;  z-index: 1; left: 20px;}
+#visao { float: left; position: relative; z-index: 3; right: 40px;}
+.Titulo_Missao{ font-size: 30px; color: #6d3816; font-weight: 200; margin-top:-250px; margin-left: 105px; margin-bottom: 10px;}
+.Titulo_Visao{ font-size: 30px; color: #6d3816; font-weight: 200; margin-top:-250px; margin-left: 115px; margin-bottom: 10px;}
+img.detalhe { margin-left: 45px; margin-top: -200px;}
+p.txt_detalhe_Missao { width: 135px; text-align: center; margin-left: 83px; line-height:20px;}
+p.txt_detalhe_Visao { width: 158px; text-align: center; margin-left: 75px; line-height:20px;}
+#header_empresa { width: 100%; float: left; background: #6d3816; }
+#header_empresa { min-width: 1024px;}
+#menu_linhadotempo { width: 960px; height: 45px; margin: 0 auto; }
+ul.menu_data { text-align: center; letter-spacing: 5px; height: 45px;  }
+ul.menu_data li { float:left; height: 30px; width: 239px; padding-top: 15px; border-right: 1px solid #FFF;  cursor: pointer;}
+ul.menu_data li.enable-border { border-right: none;}
+ul.menu_data li:hover { background: #1C0C00; opacity: 0.50;}
+ul.menu_data li span { color:#FFF; font-size: 15px;}
+#container_linhadotempo { width: 100%; float: left; background: url(../img/bt_nossaempresa.png);}
+#container_linhadotempo { min-width: 1024px;}
+#conteudo_anos80 { width: 960px; margin: 0 auto;}
+#conteudo_titulo { width: 425px; margin: 0 auto;}
+.titulo { font-size: 30px; color: #6d3816;}
+.detalhe_esq { float: left; padding-right: 20px; margin-top:10px; }
+.detalhe_dir { float: right; margin-top:-55px;}
+.detalhe_esq_2013 { float: left; padding-right: 20px; margin-top:10px; margin-left: 60px;}
+.detalhe_dir_2013 { float: right; margin-top:-55px; margin-right: 60px;}
+p.texto_container { text-align: center; font-size: 14px; color: #1c0c00;}
+p.texto_video { text-align: center; font-size: 16px; color: #6d3816; margin-top: 40px; text-transform: uppercase;}
+#video { width:425px; height: 280px; margin: 0 auto; margin-bottom: 20px; border: solid 1px #6d3816; }
+
+/***************************SELETO DOM************************************/
+#seletoDom { width: 100%; height: 260px; float: left;  font-family: "GeosansLight"; text-transform: uppercase; margin-bottom: 250px;}
+#seletoDom {min-width: 1024px;}
+#dom { width: 1024px; margin: 0 auto }
+#logo_don_geral { width: 100%; position: absolute;}
+#logo_don_geral { min-width: 1024px;}
+#logo_don { width:1024px; height: 500px; margin: 0 auto;}
+#logo_don { min-width: 1024px;}
+#don_logo { width: 489px; height: 500px;  float: left; background: url(../img/logo_don.png) no-repeat; margin-top: 65px;}
+#espaco { width: 267.5px; height: 500px;  float: left;}
+#grao { width: 100%; position: absolute;}
+#grao { min-width: 1024px;}
+#grao_esquerdo { width: 164px; height: 743px; float: left; background: url(../img/grao_esquerdo.png) no-repeat; margin-top: 280px; }
+#grao_direito { width: 164px; height: 743px; float: right; background: url(../img/grao_direito.png) no-repeat; margin-top: 280px; margin-right: 1px;}
+#seletoDom1 { width: 100%; height: 600px; float: left; font-family: "GeosansLight"; text-transform: uppercase; background: #1c0c00;}
+#seletoDom1{min-width: 1024px;}
+#box_dom1{width: 1024px; margin: 0 auto; margin-top: 280px; }
+p.text_dom1{text-align: center; font-size: 2.188em; letter-spacing: 10px; line-height: 50px; color: #cfa36e; padding: 0 0 100px 0; }
+span.text_dom1{font-size:2.188em; font-weight: 100}
+#seletoDom2 { width: 100%;  height: 682px; float: left;  font-family: "GeosansLight"; text-transform: uppercase; background: url(../img/fundo_don2.png) no-repeat; background-size: 100%;}
+#seletoDom2{ min-width: 1024px;}
+#box_dom2{ width: 1024px; margin: 0 auto; margin-top: 180px; }
+p.text_dom2{ text-align: center; font-size: 2.188em; letter-spacing: 2px; font-weight: 500; line-height: 50px; color: #1c0c00; padding: 0 0 100px 0; }
+span.text_dom2{ font-weight: 100; color: #FFF}
+#caixa_don_geral { width: 100%; position: absolute;}
+#caixa_don_geral { min-width: 1024px;}
+#caixa_don { width:1024px; margin: 0 auto; height: 334px;}
+#caixa_don { min-width: 1024px;}
+#don_caixa { width: 1024px; height: 550px; float: left; background: url(../img/caixas_don.png) no-repeat; margin-top: -40px;}
+#seletoDom3 { width: 100%; height: 700px; float: left;  font-family: "GeosansLight"; text-transform: uppercase; background: #271309;}
+#seletoDom3{ min-width: 1024px;}
+#box_dom3{ width: 1024px; margin: 0 auto; margin-top: 200px; }
+p.text_dom3{ text-align: center; font-size: 1.875em; letter-spacing: 4px; font-weight: 500; line-height: 50px; color: #FFF; padding: 0 0 100px 0; }
+span.text_dom3{ font-size:2.063em; font-weight: 100; color: #d2892a; line-height: 130px;}
+
+/*******************************CONTATO******************************/
+#contato { width: 100%; height: 640px; float: left; }   
+#contato { min-width: 1024px; }
+#conteudo_contato { width: 1024px; margin: 0 auto;  }
+#fale_conosco { width: 1024px; float: left; } 
+#mapa { width: 460px; float: left; height: 350px;  }
+#form { width: 460px; float: right; height: 350px;}
+p.txt_contato { font-size: 16px; text-transform: uppercase; color: #FFF;}
+form { font-family:"Myriad Pro"; font-size:13px; }
+input, select, textarea { font-family:"Myriad Pro"; font-size:13px; padding: 15px 10px; margin-bottom: 5px; border:none; color: #572700;}
+input.statusNome { width:440px; }
+input.statusEmail { width:440px; }
+input.statusTelefone { width: 212px; margin-right: 13px;}
+select.select { width: 212px; padding: 14px 5px;}
+textarea { width:440px; height: 116px;}
+input.enviar, input.limpar { width:100px; height:40px; cursor:pointer; text-transform: uppercase;}
+input.enviar:hover { background: url(../img/seta.png) no-repeat right #6D3816; color: #FFF;  }
+input.limpar:hover { background: url(../img/x.png) no-repeat right #6D3816; color: #FFF;  }
+input.enviar { width: 222px; border:none; background: url(../img/seta.png) no-repeat right #1c0c00; color: #FFF; }
+input.limpar { width: 222px; margin-right: 13px; border:none; background: url(../img/x.png) no-repeat right #a16e3f; color: #FFF;  }    
+#form_contato ul li { font-family:"Myriad Pro"; font-size:13px; color: #ce0000;}
+#form_contato li { width: 460px;}
+/****************************FOOTER******************************/
+#footer { width: 100%; float: left; background:#1c0c00; border-top: 7px solid #6d3816}
+#footer { min-width: 1024px;}
+#menu_footer{  width: 1024px; margin: 0 auto; }
+ul.mn_footer{ text-align: center}
+ul.mn_footer li {display: inline-table; padding: 30px 5px; color:#fff; }
+ul.mn_footer li a { color:#8f5028}
+
+    
+
+     
+
